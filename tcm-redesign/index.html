@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCM Zentrum Wien | Moderne Terminbuchung</title>
+    <meta
+      name="description"
+      content="Neu gestaltete Landingpage für das TCM Zentrum Wien mit Online-Termin, telefonischer Buchung, Live-Chat und E-Mail-Kontakt."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="#home">TCM Zentrum Wien</a>
+        <nav class="nav">
+          <a href="#services">Leistungen</a>
+          <a href="#booking">Termin</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+        <a class="btn btn-outline" href="tel:+43123456789">+43 1 234 56 789</a>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Traditionelle Chinesische Medizin in Wien</p>
+            <h1>Professioneller Webauftritt mit klaren Terminwegen</h1>
+            <p class="lead">
+              Diese überarbeitete Seitenstruktur fokussiert auf Vertrauen, Übersicht und schnelle Kontaktaufnahme: Online-Termin,
+              Telefon-Termin, Live-Chat und E-Mail – direkt im ersten Sichtbereich.
+            </p>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#booking">Online Termin buchen</a>
+              <a class="btn btn-outline" href="tel:+43123456789">Telefonisch buchen</a>
+            </div>
+            <div class="quick-contact" aria-label="Schnellkontakt">
+              <a href="#chat">💬 Live-Chat starten</a>
+              <a href="mailto:kontakt@tcm-zentrum-wien.at">✉️ E-Mail senden</a>
+            </div>
+          </div>
+          <aside class="card highlight">
+            <h2>Heute erreichbar</h2>
+            <ul>
+              <li><strong>Online Buchung:</strong> 24/7 verfügbar</li>
+              <li><strong>Telefon:</strong> Mo–Fr 08:00–18:00</li>
+              <li><strong>Chat:</strong> Antwort in ca. 2 Minuten</li>
+              <li><strong>E-Mail:</strong> Rückmeldung am selben Werktag</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="#booking">Sofort Termin sichern</a>
+          </aside>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <h2>Unsere Kernleistungen</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Akupunktur</h3>
+              <p>Individuelle Behandlung bei Schmerzen, Stress und Schlafproblemen.</p>
+            </article>
+            <article class="card">
+              <h3>Kräutertherapie</h3>
+              <p>Maßgeschneiderte Rezepturen auf Basis Ihrer Konstitution.</p>
+            </article>
+            <article class="card">
+              <h3>Ernährungsberatung</h3>
+              <p>Ganzheitlicher Plan nach TCM-Prinzipien für Alltag und Prävention.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="booking" class="section section-alt">
+        <div class="container booking-layout">
+          <div>
+            <h2>Termin vereinbaren</h2>
+            <p>Wählen Sie den für Sie passenden Buchungsweg:</p>
+            <div class="booking-options">
+              <div class="card">
+                <h3>1) Online-Termin</h3>
+                <p>Ideal für schnelle Auswahl von Datum und Uhrzeit.</p>
+                <button class="btn btn-primary" type="button">Zum Online-Kalender</button>
+              </div>
+              <div class="card">
+                <h3>2) Telefonische Terminvergabe</h3>
+                <p>Persönliche Beratung für Erstgespräche und komplexe Anliegen.</p>
+                <a class="btn btn-outline" href="tel:+43123456789">Jetzt anrufen</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="card form" aria-label="Schnellanfrage">
+            <h3>Schnellanfrage per E-Mail</h3>
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Ihr Name" required />
+            </label>
+            <label>
+              E-Mail
+              <input type="email" name="email" placeholder="name@beispiel.at" required />
+            </label>
+            <label>
+              Anliegen
+              <textarea name="message" rows="4" placeholder="Kurzbeschreibung Ihres Anliegens"></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Anfrage senden</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="chat" class="section">
+        <div class="container">
+          <div class="chat-banner card">
+            <div>
+              <h2>Live-Chat Unterstützung</h2>
+              <p>Für kurze Fragen zu Behandlung, Kosten und Terminen steht unser Team direkt bereit.</p>
+            </div>
+            <button id="chatToggle" class="btn btn-primary" type="button">Chat öffnen</button>
+          </div>
+          <div id="chatBox" class="chat-box" hidden>
+            <p><strong>TCM Team:</strong> Willkommen! Wie können wir Ihnen helfen?</p>
+            <p class="hint">Demo-UI: Hier kann später ein echter Chat-Dienst (z. B. Crisp, Intercom, WhatsApp) eingebunden werden.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>TCM Zentrum Wien</h3>
+          <p>Beispielstraße 12, 1010 Wien</p>
+        </div>
+        <div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="tel:+43123456789">Telefon: +43 1 234 56 789</a></li>
+            <li><a href="mailto:kontakt@tcm-zentrum-wien.at">E-Mail: kontakt@tcm-zentrum-wien.at</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Öffnungszeiten</h4>
+          <p>Mo–Fr 08:00–18:00</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
